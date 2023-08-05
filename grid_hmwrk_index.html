@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+        * {
+            padding: 0;
+            box-sizing: border-box;
+            }
+    
+            div, .nav, .image{
+                border: 1px solid black;
+            }
+
+            body {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;  
+            }
+
+            .head_container {
+                border: 1px solid violet;
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr 1fr;
+                width: 1171px;
+                height: 33px;
+            } 
+
+            .nav {
+                display: grid;
+                grid-template-columns: 1fr 10% 10%;
+                align-items: center;
+                justify-items: end;
+            }
+
+            .main {
+                border: 1px solid violet;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 1171px;
+                
+            }
+
+            .container {
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr;
+                gap: 15px;
+                
+
+            }
+            .title_container {
+                align-self: self-end;
+                color: #FF9401;
+                font-family: Gilroy;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px;  
+                margin-top: 15px;
+            }
+
+            .text_line {
+                color: #232323;
+                font-family: Gilroy;
+                font-size: 96px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 108px;
+            }
+
+            .text_main {
+                width: 497px;
+                height: 71px;
+                color: #3F3232;
+                font-family: Circular Std;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: 160%;
+            }
+
+            .button {
+                width: 243px;
+                height: 62px;
+                border-radius: 31px;
+                background: #FF9401;
+                color: white;
+            }
+            
+            .sidebar_img {
+                display: grid;
+                grid-template-columns: 1fr;
+                background-repeat: no-repeat;
+                background-size: contain; 
+                margin: 20px -70px -90px -50px;
+                }
+            
+            
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="head_container">
+            
+            <div class="logo"> <img src="./assets/images/logo.svg" alt="fplace"></div>
+
+            <nav class="nav">
+                <img class="image" src="./assets/images/search.svg" alt="search"> 
+                <img class="image"  src="./assets/images/cart.svg" alt="cart">
+                <img class="image"  src="./assets/images/menu.svg" alt="menu">
+            </nav>
+        </div>
+
+        <div class="main">
+            
+            <!-- <div class="sandwich"><img src="./assets/images/sandwich.png" alt="sandwich"></div>
+        -->
+            <div class="container">
+                <div class="title_container">__Restaurant</div>
+                <div class="text_line">Good Food <br> Good Mood</div>
+                <!-- <div class="text_line">Good Mood</div> -->
+                <div class="text_main">The food palace is a neighborhood restaurant serving seasonal global cuisine driven by the faire</div>
+            <button class="button">КНОПОЧКА</button>
+                <div class="foot_socials">
+                facebook
+                instagram
+                twitter
+                </div>
+            </div>
+
+        <div class="sidebar_img" style="background-image: url(./assets/images/pizza.png);">
+        
+        </div>
+        
+
+    </header>
+
+    <footer>
+        
+    </footer>
+</body>
+
+</html>
