@@ -7,22 +7,20 @@
 
     <style>
     
-        * {
+            * {
             padding: 0;
             box-sizing: border-box;
             }
     
-            div, .nav, .image{
-                border: 1px solid black;
-            }
 
             body {
                 display: grid;
                 grid-template-rows: 1fr 1fr 1fr;  
+                margin-left: 2vw;
+                margin-right: 2vw;
             }
 
             .head_container {
-                border: 1px solid violet;
                 display: grid;
                 grid-template-rows: 1fr;
                 grid-template-columns: 1fr 1fr;
@@ -38,7 +36,6 @@
             }
 
             .main {
-                border: 1px solid violet;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 width: 1171px;
@@ -50,18 +47,17 @@
                 grid-template-rows: 1fr;
                 grid-template-columns: 1fr;
                 gap: 15px;
-                
-
             }
+
             .title_container {
                 align-self: self-end;
+                margin-top: 15px;
                 color: #FF9401;
                 font-family: Gilroy;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: 30px;  
-                margin-top: 15px;
             }
 
             .text_line {
@@ -99,6 +95,17 @@
                 background-size: contain; 
                 margin: 20px -70px -90px -50px;
                 }
+
+                .foot_socials {
+                    display: grid;
+                    grid-template-columns: 30px 30px 30px;
+                    gap: 50px;
+                }
+
+            .social {
+                width: 30px;
+                height: 30px;
+                }
             
             
     </style>
@@ -129,22 +136,17 @@
                 <div class="text_main">The food palace is a neighborhood restaurant serving seasonal global cuisine driven by the faire</div>
             <button class="button">КНОПОЧКА</button>
                 <div class="foot_socials">
-                facebook
-                instagram
-                twitter
+                <img class="social" src="./assets/images/icons8-facebook.svg" alt="facebook">
+                <img class="social" src="./assets/images/icons8-instagram.svg" alt="instagram">
+                <img class="social" src="./assets/images/icons8-twitter.svg" alt="instagram">
                 </div>
             </div>
 
-        <div class="sidebar_img" style="background-image: url(./assets/images/pizza.png);">
+        <div class="sidebar_img" style="background-image: url(./assets/images/pizza.png);"></div>
         
         </div>
         
-
     </header>
-
-    <footer>
-        
-    </footer>
 </body>
 
 </html>
