@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header-1 header-2 header-2"
+    "main-1 img img"
+    "main-2 img img"
+    "foot-1 foot-2 foot-3";
+    gap: 10px; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 1fr;
+}
+
+.header-1 {
+    grid-area: header-1;
+}
+
+.header-2 {
+    grid-area: header-2;
+}
+
+.header-3 {
+    grid-area: header-3;
+}
+
+.main-1 {
+    grid-area: main-1;
+}
+
+.main-2 {
+    grid-area: main-2;
+}
+
+.img {
+    grid-area: img;
+}
+
+.foot-1{
+    grid-area: foot-1;
+    grid-row: 4 / 5 ;
+    grid-column: 1 / 2;
+}
+
+.foot-2{
+    grid-area: foot-2;
+    grid-row: 4 / 5 ;
+    grid-column: 2 / 3;
+}
+
+.foot-3{
+    grid-area: foot-3;
+    grid-row: 4 / 5 ;
+    grid-column: 3 / 4;
+}
+
+.footer {
+    border: 1px solid red;
+    display: grid;
+    grid-row: 4 / 5 ;
+    grid-column: 1 / 4;
+    justify-content: space-around;
+}
+
+div {
+    border: 1px solid black;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+            <div class="header-1">head1</div>
+            <div class="header-2">head2</div>
+        
+            <div class="main-1">main1</div>
+            <div class="main-2">main2</div>
+            <div class="img">image_main</div>
+                
+        <footer class="footer">
+            <div class="foot-1">foot1</div>
+            <div class="foot-2">foot2</div>
+            <div class="foot-3">foot3</div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
